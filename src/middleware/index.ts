@@ -4,7 +4,8 @@ import { NextFunction, Request, Response } from "express";
 export const allowedOrigins = [
   "http://localhost:3000",
   "https://jpadev-client-e4o7hk530-vanvasquez.vercel.app",
-  "https://jpadev-client.vercel.app/"
+  "https://jpadev-client.vercel.app/",
+  "http://localhost:3000"
 ];
 
 // Credentials

@@ -11,6 +11,7 @@ export const allowedOrigins = [
 // Credentials
 export const credentials = (req: Request, res: Response, next: NextFunction) => {
   const origin: string | undefined = req.headers.origin; 
+  console.log(origin)
   if (allowedOrigins.includes(origin as string)) {  
     res.header("Access-Control-Allow-Credentials", "true");
     }
